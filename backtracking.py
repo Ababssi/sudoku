@@ -1,8 +1,5 @@
-import time
-
 class GridSudoku:
     def __init__(self, filename):
-        self.fullList = list(range(1,10))
         self.grid = self.load_from_file(filename)
         self.grid_initial = self.load_from_file(filename)
     
@@ -94,10 +91,6 @@ class GridSudoku:
                     return False
         return True
 
-    def diddsplay(self):
-        for row in self.grid:
-            print(' '.join(str(num) for num in row))
-
     def display(self):
         gridDisplayed = []
         for line in range(1,9):
@@ -128,12 +121,10 @@ class GridSudoku:
         for value in possible_values:
 
             self.grid[line][col] = value
-            print(f"Assignation: cell ({line}, {col}) with {value}")
-
+            # print(f"Assignation: cell ({line}, {col}) with {value}")
             if self.solve():
                 return True
-                
-            print(f"Backtracking on: cell ({line}, {col}) (cancelation of {value})")
+            # print(f"Backtracking on: cell ({line}, {col}) (cancelation of {value})")
             self.grid[line][col] = 0
         
         return False
