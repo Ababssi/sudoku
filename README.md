@@ -2,6 +2,7 @@
 
 **Auteur :** Ababssi Sophien  
 **Date :** 2025-03-25
+**Linkedin :** https://www.linkedin.com/in/sophien-ababssi-9548a2200/
 
 ## Description
 Outil de résolution de Sudoku en Python utilisant le backtracking.
@@ -9,7 +10,6 @@ Outil de résolution de Sudoku en Python utilisant le backtracking.
 ## Fichiers
 - `backtracking.py` : Implémentation de la méthode de résolution.
 - `main.py` : Lecture du fichier d’entrée, résolution et affichage.
-- `Présentation.pdf` : Présentation personnelle et lien GitHub.
 - **Répertoire `examples`** : Contient tous les exemples de Sudoku à ressoudre.
 
 

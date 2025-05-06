@@ -10,14 +10,14 @@ def main():
 
     sudoku = GridSudoku(filename)
 
-    print("Grille initiale :")
+    print("Initial Grid :")
     sudoku.display()
 
     if sudoku.solve():
-        print("\nGrille résolue :")
+        print("\nSolved Grid :")
         sudoku.display()
     else:
-        print("Aucune solution trouvée.")
+        print("No solution.")
 
 if __name__ == "__main__":
     main()
